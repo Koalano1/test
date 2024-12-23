@@ -15,7 +15,6 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/v1/transactions")
-//for READ controller
 @ConditionalOnProperty(name = "app.write.enabled", havingValue = "false")
 public class TransactionQueryController {
 
